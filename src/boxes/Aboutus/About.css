@@ -1,0 +1,69 @@
+.app__about {
+	position: relative;
+}
+.app__about_back {
+	position: absolute;
+	/* absolute position p inset mera top and bottom s distance more easily correspond krta h */
+	inset: 0;
+}
+.app__about_back img {
+	width: 319px;
+	height: 415px;
+	z-index: 0;
+}
+.app__about__content {
+	width: 100%;
+	z-index: 5;
+}
+.app__about__content__left {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	text-align: right;
+	flex-direction: column;
+}
+.app__about__content__mid {
+	margin: 2rem 4rem;
+}
+.app__about__content__mid img {
+	height: 900px;
+}
+
+.app__about__content__right {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-align: left;
+	flex-direction: column;
+}
+.app__about__content__right p,
+.app__about__content__left p {
+	margin: 2rem 0;
+	color: var(--color-grey);
+}
+
+/* media queries */
+/* /mobile devic */
+@media screen and (max-width: 650px) {
+	.app__about_back img {
+		width: 80%;
+		height: 300px;
+	}
+}
+/* tablet device */
+@media screen and (max-width: 900px) {
+	.app__about__content {
+		flex-direction: column;
+	}
+	.app__about__content__mid {
+		margin: 4rem 0;
+	}
+}
+/* badi screen  */
+@media screen and (max-width: 2000px) {
+	.app__about__content__mid img {
+		height: 1110px;
+	}
+}

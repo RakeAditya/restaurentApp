@@ -15,7 +15,7 @@ const Mainhead = () => {
 				<button className="custom__button">Explore Menu</button>
 			</div>
 			<div className="app__wrapper_img">
-				<img src={images.welcome} alt="image h yaha" />
+				<img src={images.welcome} alt="welcome h yaha" />
 			</div>
 		</div>
 	);
