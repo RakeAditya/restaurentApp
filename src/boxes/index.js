@@ -1,0 +1,10 @@
+import About from './Aboutus/About';
+import Chef from './Chef/Chef';
+import Findus from './Findus/Findus';
+import Mainhead from './mainhead/Mainhead';
+import Gallary from './Gallary/Gallary';
+import Intro from './Intro/Intro';
+import Laurels from './Laurels/Laurels';
+import Menu from './Menu/Menu';
+import Foot from './Foot/Foot';
+export { About, Chef, Findus, Foot, Gallary, Intro, Laurels, Menu, Mainhead };

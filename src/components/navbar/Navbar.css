@@ -1,0 +1,120 @@
+.app_bar {
+	width: 100%;
+	/* border: 2px solid red; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-black);
+	padding: 1rem 2rem;
+}
+.app_bar_logo {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.app_bar_logo img {
+	width: 10rem;
+}
+/* list section navbaar k ka */
+.app_bar_links {
+	list-style-type: none;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+.app_bar_links li {
+	margin: 0 1rem;
+	cursor: pointer;
+}
+.app_bar_links li:hover {
+	color: var(--color-grey);
+}
+/* login section navbar k */
+.app_bar_login {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.app_bar_login a {
+	margin: 0 1rem;
+	text-decoration: none;
+	transition: 0.5s ease;
+}
+.app_bar_login div {
+	width: 1px;
+	height: 32px;
+	background-color: var(--color-golden);
+}
+.app_bar_login a:hover {
+	border-bottom: 1px solid var(--color-golden);
+}
+
+/* mobile screen window */
+.app_bar_small {
+	display: none;
+	transition: 0.5s ease;
+}
+
+.app_bar_small_overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: var(--color-black);
+	transition: 0.5s ease;
+	flex-direction: column;
+	z-index: 5;
+}
+.app_bar_small_overlay .overlay__close {
+	font-size: 27px;
+	color: var(--color-golden);
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.app_bar_small_links {
+	list-style-type: none;
+}
+
+.app_bar_small_links li {
+	margin: 1rem;
+	cursor: pointer;
+	color: var(--color-golden);
+	font-family: var(--font-base);
+	font-size: 2rem;
+	text-align: center;
+}
+.app_bar_small_links li:hover {
+	color: var(--color-white);
+}
+
+/* media queries */
+/* bade devices p */
+@media screen and (max-width: 2000px) {
+	.app_bar_logo img {
+		width: 12rem;
+	}
+}
+@media screen and (max-width: 1150px) {
+	.app_bar_links {
+		display: none;
+	}
+	.app_bar_small {
+		display: flex;
+	}
+}
+/* mobile view  */
+@media screen and (max-width: 650px) {
+	.app_bar {
+		padding: 1rem;
+	}
+	.app_bar_login {
+		display: none;
+	}
+	.app_bar_logo img {
+		width: 8rem;
+	}
+}
