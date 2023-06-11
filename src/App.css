@@ -73,6 +73,11 @@
 	outline: none;
 	cursor: pointer;
 }
+/* subheading style */
+.subheading__div {
+	/* border: 1px solid red; */
+	margin-bottom: 1rem;
+}
 /* paragraph styling */
 .p__cormorant {
 	font-family: var(--font-base);

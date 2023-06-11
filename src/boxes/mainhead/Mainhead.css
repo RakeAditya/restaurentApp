@@ -1,0 +1,19 @@
+.app_mainhead {
+	/* border: 1px solid red; */
+	background-color: var(--color-black);
+}
+.app_mainhead_h1 {
+	/* border: 1px solid red; */
+	color: var(--color-golden);
+	font-family: var(--font-base);
+	letter-spacing: 0.04em;
+	line-height: 115px;
+	font-size: 90px;
+	text-transform: capitalize;
+}
+.app_mainhead_p {
+	margin: 2rem 0;
+}
+.app_mainhead_img img {
+	width: 80%;
+}
