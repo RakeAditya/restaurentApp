@@ -1,0 +1,27 @@
+.app__video {
+	height: 100vh;
+	position: relative;
+}
+.app__video video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.app__video__up__on {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.app__video__up__off {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.app__video__loop {
+	height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+	border: 1px solid var(--color-golden);
+	cursor: pointer;
+}
